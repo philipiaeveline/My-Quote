@@ -1,9 +1,19 @@
 export class Quote{
-    public showDescription: boolean;
+    // public showDescription: boolean;
+    id: number;
+    name: string;
+    description: string;
+    author:string;
+    completeDate: Date;
     downVote:number;
     upVote:number;
-    constructor(public id: number,public name: string,public description: string, public author:string, public completeDate: Date){
-      this.showDescription=false;
+    constructor( id: number,name: string,description: string, author:string,completeDate: Date){
+      // this.showDescription=false;
+      this.id= id;
+      this.name= name;
+      this.description=  description;
+      this.author=author;
+      this.completeDate= completeDate;
       this.downVote=0;
       this.upVote=0;
     }
