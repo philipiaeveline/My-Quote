@@ -4,3 +4,13 @@
 body{
     background-image: url("src/assets/tree-736881_960_720.jpg");
 }
+h1{
+    color: white;
+    margin-left: 400px;
+}
+
+.card{
+    margin-right: 400px;
+} button {
+    margin-right: 10%;
+}
