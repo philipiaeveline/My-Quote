@@ -13,7 +13,6 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     AppComponent,
     QuoteComponent,
     QuoteFormComponent,
-   
   ],
   imports: [
     BrowserModule,

@@ -14,22 +14,22 @@
     <div class="form-group">
 
       <label for="description">Quote title</label>
-      <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description"
+      <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.quote title" name="quotetitle"
         #description="ngModel" required></textarea>
-      <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+      <div [hidden]="Quote title.valid || quote title.pristine" class="alert alert-danger">
         <p>Description is required</p>
       </div>
     </div>
     <div class="form-group">
 
       <label for="author">Quote Author</label>
-      <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author"
-        #author="ngModel" required></textarea>
+      <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="auther"
+        #description="ngModel" required></textarea>
       <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
         <p>Author is required</p>
       </div>
     </div>
-    <!-- <div class="form-group">
+    <div class="form-group">
 
       <label for="quote">Add quote</label>
       <input type='quote' id="quote" [(ngModel)]="newQuote.completequote" name="completquote" #completequote="ngModel"
@@ -37,7 +37,7 @@
       <div [hidden]="completequote.valid || completequote.pristine" class="alert alert-danger">
         <p>Quote is required</p>
       </div>
-    </div> -->
+    </div>
     <button type="submit" class="btn btn-success">Add Quotes</button>
   </form>
 </div>

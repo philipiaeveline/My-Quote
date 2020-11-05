@@ -1,33 +1,33 @@
-  <div class="container">
-    <nav class="navbar navbar-dark bg-primary">
-      <form class="form-inline" action="/action_page.php">
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Goodreaders Choice Aword">
+<nav class="navbar navbar-dark bg-primary">
+    <form class="form-inline">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
         </div>
-      </form>
-    </nav>
-    <br>
-    <div class="row">
-      
-        <div class="col-md-6" *ngFor='let quote of quotes; let i = index'>
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">{{quote.id}} {{quote.name}}</h4>
-              <p class="card-text">{{quote.description}}</p>
-              <h4 class="card-title">{{quote.author}} </h4>
-              <h4 class="card-title">{{quote.completeDate|date}} </h4>
-              <button class="btn btn-success" (click)='upVote(i)'>UPVOTE {{quote.upVote}}</button>
-              <button class="btn btn-success" (click)='downVote(i)'>DWVOTE {{quote.downVote}}</button>
-              <button class="btn btn-success" (click)='quoteDelete($event,i)'>DELETE</button>
-            </div>
-          </div>
+        <input type="text" class="form-control" placeholder="Goodreaders Choice Aword">
+      </div>
+    </form>
+</nav>
+<br>
+<div class="container-fluid">
+
+  <div class="row">
+
+    <div class="col-md-6 mb-4" *ngFor='let quote of quotes; let i = index'>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{quote.id}} {{quote.name}}</h4>
+          <p class="card-text">{{quote.description}}</p>
+          <h4 class="card-title">{{quote.author}} </h4>
+          <h4 class="card-title">{{quote.completeDate|date}} </h4>
+          <button class="btn btn-success" (click)='upVote(i)'>UPVOTE {{quote.upVote}}</button>
+          <button class="btn btn-success" (click)='downVote(i)'>DWVOTE {{quote.downVote}}</button>
+          <button class="btn btn-success" (click)='quoteDelete($event,i)'>DELETE</button>
         </div>
-  
-      <div class="">
-        <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
       </div>
     </div>
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
+    </div>
   </div>
+</div>
