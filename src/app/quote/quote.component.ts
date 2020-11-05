@@ -17,12 +17,6 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Henr y Ali', 'Good friends, good books, and a sleepy conscience: this is the ideal life.', 'Dceddy Otieno', new Date(2020+ 3, 14))
   ];
 
-  // get sortQuotes() {
-  //   return this.quotes.sort((a, b) => {
-  //     return <any>new Date(b.likes) - <any>new Date(a.likes);
-  //     return <any>new Date(b.datePosted) - <any>new Date(a.datePosted);
-  //   });
-  // }  
   upVote(index){
     this.quotes[index].upVote++;
   }
@@ -45,9 +39,6 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  //   //  displayInfo(index){
-  //   // this.quotes[index].showInfo = !this.quotes[index].showInfo;
-  // }
   constructor() { }
   ngOnInit() {
   }
