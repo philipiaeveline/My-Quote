@@ -1,12 +1,12 @@
 <nav class="navbar navbar-dark bg-primary">
-    <form class="form-inline">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">@</span>
-        </div>
-        <input type="text" class="form-control" placeholder="Goodreaders Choice Aword">
+  <form class="form-inline">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">@</span>
       </div>
-    </form>
+      <input type="text" class="form-control" placeholder="Goodreaders Choice Aword">
+    </div>
+  </form>
 </nav>
 <br>
 <div class="container-fluid">
@@ -19,7 +19,7 @@
           <h4 class="card-title">{{quote.id}} {{quote.name}}</h4>
           <p class="card-text">{{quote.description}}</p>
           <h4 class="card-title">{{quote.author}} </h4>
-          <h4 class="card-title">{{quote.completeDate|date}} </h4>
+          <p class="card-title">{{quote.completeDate|dateCount}} Days </p>
           <button class="btn btn-success" (click)='upVote(i)'>UPVOTE {{quote.upVote}}</button>
           <button class="btn btn-success" (click)='downVote(i)'>DWVOTE {{quote.downVote}}</button>
           <button class="btn btn-success" (click)='quoteDelete($event,i)'>DELETE</button>

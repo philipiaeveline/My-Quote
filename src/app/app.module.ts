@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateCountPipe } from './date-count.pipe';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     AppComponent,
     QuoteComponent,
     QuoteFormComponent,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
