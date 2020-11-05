@@ -39,7 +39,7 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  constructor() { }
-  ngOnInit() {
+  constructor() {}
+  ngOnInit() {   
   }
 }
