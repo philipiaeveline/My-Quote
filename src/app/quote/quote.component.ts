@@ -14,8 +14,8 @@ export class QuoteComponent implements OnInit {
     new Quote(1, 'Benard Akaka', '"In three words I can sum up everything  I ve learned about life: it goes on"', ' Dalai Lama', new Date(2019, 6, 9)),
     new Quote(2, 'Kerry Kogei', '"It is better to be hated for what  you are than to be loved for what you are not."', 'Stephen King',new Date(2019, 1, 12)),
     new Quote(3, 'Philipia', '"It does not do to dwell on dreams and forget to live."', 'Mae West', new Date(2019, 11, 18)),
-    new Quote(4, 'Slyvia Anne', '"There are only two ways to live your life. One is as though nothing is a miracle.The other is as though everything is a miracle."', 'Thomas A. Edison', new Date(2020, 11, 3)),
-    new Quote(5, 'Henr y Ali', '"Good friends, good books, and a sleepy conscience: this is the ideal life."', 'Will Smith', new Date(2020+ 3, 14))
+    new Quote(4, 'Life quote', '"There are only two ways to live your life. One is as though nothing is a miracle.The other is as though everything is a miracle."', 'Thomas A. Edison', new Date(2020, 11, 3)),
+    new Quote(5, 'Communication', '"Good friends, good books, and a sleepy conscience: this is the ideal life."', 'Will Smith', new Date(2020+ 3, 14)),
   ];
 
   upVote(index){
