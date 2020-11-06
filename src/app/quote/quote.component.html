@@ -22,7 +22,7 @@
           <p class="card-title">{{quote.completeDate|dateCount}} Days </p>
           <button class="btn btn-success" (click)='upVote(i)'>upvote{{quote.upVote}}</button>
           <button class="btn btn-success" (click)='downVote(i)'>downvote{{quote.downVote}}</button>
-          <button class="btn btn-denger" (click)='quoteDelete($event,i)'>DELETE</button>
+          <button class="btn btn-danger" (click)='quoteDelete($event,i)'>DELETE</button>
         </div>
       </div>
     </div>
