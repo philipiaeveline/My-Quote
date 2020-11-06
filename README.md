@@ -1,6 +1,6 @@
 
 # QuotesApp
-#### This project interlinks clients to software developers, Friday November6th 2020 
+#### This project interlinks clients to software developers, Friday November 6th 2020 
 
 ## Author
 
