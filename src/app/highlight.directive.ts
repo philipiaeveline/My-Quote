@@ -10,17 +10,17 @@ export class HighlightDirective {
   @HostBinding('style.backgroundColor')backgroundColor = 'transparent';
 
   @HostListener('mouseover') mouseover(eventData: Event) {
-    this.elem.nativeElement.style.backgroundColor = 'green';
-    this.elem.nativeElement.style.color = 'red';
+    this.elem.nativeElement.style.backgroundColor = 'yellow';
+    // this.elem.nativeElement.style.color = 'blue';
 }
 
 @HostListener('mouseleave') mouseleave(eventData: Event) {
     this.elem.nativeElement.style.backgroundColor = 'transparent';
-    this.elem.nativeElement.style.color = 'Black';
+    // this.elem.nativeElement.style.color = 'Black';
 }
 
   gnOninit() {
-    this.elem.nativeElement.style.backgroundColor = 'yellow';
+    this.elem.nativeElement.style.backgroundColor = 'green';
     this.elem.nativeElement.style.color = 'white';
   }
 

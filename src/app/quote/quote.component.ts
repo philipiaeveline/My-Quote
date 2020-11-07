@@ -40,7 +40,31 @@ export class QuoteComponent implements OnInit {
     }
   }
 
+
+  high:number;
+  author:string;
+  name:String;
+  quote:String;
+  low:number;
+  day:any;
+
+highQuote() {
+  this.high = 0;  
+  
+  for (let i = 0;i<this.quotes.length;i++){
+    if(this.quotes[i].upVote>this.high){
+      this.high = this.quotes[i].upVote;
+      this.author = this.quotes[i].author;
+      this.name = this.quotes[i].name;
+      this.quote = this.quotes[i].description;
+      this.low = this.quotes[i].downVote;
+      this.day = this.quotes[i].completeDate;
+
+    }
+  }
+}
   constructor() { }
   ngOnInit() {   
   }
 }
+ 
