@@ -30,4 +30,8 @@
       <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
     </div>
   </div>
+  <div class="card pt-2" style="width:100%" *ngFor='let repo of sec.repos; let i = index' appHighlight>
+    <div class="card-header">
+        <p><a href="{{sec.repos[i].html_url}}">{{sec.repos[i].name}}</a></p>
+    </div>
 </div>
