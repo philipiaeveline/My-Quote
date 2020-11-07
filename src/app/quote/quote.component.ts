@@ -42,7 +42,7 @@ export class QuoteComponent implements OnInit {
 
 
   high:number;
-  author:string;
+  author:string; 
   name:String;
   quote:String;
   low:number;
@@ -67,4 +67,3 @@ highQuote() {
   ngOnInit() {   
   }
 }
- 
