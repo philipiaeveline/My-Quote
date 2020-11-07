@@ -16,8 +16,8 @@ export class QuoteComponent implements OnInit {
     new Quote(3, 'Love Quotes', '"It does not do to dwell on dreams and forget to live."', 'Mae West', new Date(2019, 11, 18)),
     new Quote(4, 'Life quotes', '"There are only two ways to live your life. One is as though nothing is a miracle.The other is as though everything is a miracle."', 'Thomas A. Edison', new Date(2020, 11, 3)),
     new Quote(5, 'Communication Quotes', '"Good friends, good books, and a sleepy conscience: this is the ideal life."', 'Will Smith', new Date(2020+ 3, 14)),
-  ];
-
+  ]; 
+ 
   upVote(index){
     this.quotes[index].upVote++;
   }

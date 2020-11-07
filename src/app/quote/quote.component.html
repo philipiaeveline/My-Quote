@@ -31,16 +31,15 @@
     </div>
   </div>
 
-  <button class="btn btn-success" (click)='highQuote()'>Favourite</button>
-  <div class="card">
+  <div class="card"  appHighlight >
     <div *ngIf='highQuote'>
       <p>{{quote}}</p>
       <p>{{day}}</p>
       <p>{{author}}</p>
+      <button class="btn btn-primary" (click)='highQuote()'>Favourite</button>
 
 
     </div>
   </div>
-  <div class="card-body" style="width:100%" *ngFor='let quote of quotes; let i = index' appHighlight>
-  </div>
-</div>
+ 
+</div> 
