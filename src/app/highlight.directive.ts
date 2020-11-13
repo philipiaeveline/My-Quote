@@ -14,7 +14,7 @@ export class HighlightDirective {
  }
 
 
-  gnOninit() {
+  ngOninit() {
     this.elem.nativeElement.style.backgroundColor = 'blue';
     // this.elem.nativeElement.style.color = 'white';
   }

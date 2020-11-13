@@ -1,0 +1,6 @@
+ <!-- <p >{{quote.description}}</p>
+<p >{{quote.completeDate|dateCount}} Days </p>
+<p>Quote works</p> -->
+<button class="btn btn-success" (click)='upVote($event)'>upvote{{quote.upVote}}</button>
+          <button class="btn btn-success" (click)='downVote($event)'>downvote{{quote.downVote}}</button>
+          <button class="btn btn-danger" (click)='quoteDel(true)'>DELETE</button>

@@ -20,14 +20,17 @@
           <p class="card-text">{{quote.description}}</p>
           <h4 class="card-title">{{quote.author}} </h4>
           <p class="card-title">{{quote.completeDate|dateCount}} Days </p>
-          <button class="btn btn-success" (click)='upVote(i)'>upvote{{quote.upVote}}</button>
+          <button (click)='toggleDetails(i)'>Review</button>
+
+          <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='quoteDelete($event,i)'></app-quote-detail>
+          <!-- <button class="btn btn-success" (click)='upVote(i)'>upvote{{quote.upVote}}</button>
           <button class="btn btn-success" (click)='downVote(i)'>downvote{{quote.downVote}}</button>
-          <button class="btn btn-danger" (click)='quoteDelete($event,i)'>DELETE</button>
+          <button class="btn btn-danger" (click)='quoteDelete($event,i)'>DELETE</button> -->
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <app-quote-form (addQuote)="addedQuote($event)"></app-quote-form>
+      <app-quote-form (addQuote)="addedQuote($event)" ></app-quote-form>
     </div>
   </div>
 

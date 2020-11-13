@@ -1,3 +1,7 @@
 .card:hover{
     background-color: darkgray;
 }
+header{
+    background-color: grey;
+    color: black;
+}

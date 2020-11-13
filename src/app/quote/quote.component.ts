@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-quote',
@@ -22,7 +23,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].upVote++;
   }
   downVote(index){
-    this.quotes[index].downVote--;
+    this.quotes[index].downVote;
   }
   addedQuote(quote) {
     let arraysize = this.quotes.length;
@@ -32,15 +33,17 @@ export class QuoteComponent implements OnInit {
   }
   quoteDelete(isComplete, index) {
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      let toDelete = confirm(`Are you sure you want to delete this Quote${this.quotes[index].description}?`)
       if (toDelete) {
-        this.quotes.splice(index, 1);
-      }
+         this.quotes.splice(index, 1);
+      } 
 
     }
   }
 
-
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   high:number;
   author:string; 
   name:String;

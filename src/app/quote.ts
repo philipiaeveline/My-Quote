@@ -1,5 +1,5 @@
 export class Quote{
-    // public showDescription: boolean;
+    public showDescription: boolean;
     id: number;
     name: string;
     description: string;
@@ -8,7 +8,7 @@ export class Quote{
     downVote:number;
     upVote:number;
     constructor( id: number,name: string,description: string, author:string,completeDate: Date){
-      // this.showDescription=false;
+      this.showDescription=false;
       this.id= id;
       this.name= name;
       this.description=  description;
